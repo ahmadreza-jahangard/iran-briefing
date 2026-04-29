@@ -12,7 +12,7 @@ on:
   # case the Cloudflare Worker dies; primary cadence is the Worker firing
   # workflow_dispatch every minute.
   schedule:
-    - cron: '0 * * * *'
+    - cron: '*/30 * * * *'
   workflow_dispatch:
 
 # Serialize runs. The Worker fires every minute; if a previous scrape is
