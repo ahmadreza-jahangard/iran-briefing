@@ -241,6 +241,17 @@
       "priority": "primary",
       "notes": "BBC Middle East desk.",
       "reviewed": false
+    },
+    {
+      "id": "tg_MamelekateDaily",
+      "name": "MamelekateDaily",
+      "type": "telegram",
+      "url": "https://t.me/s/MamelekateDaily",
+      "handle": "haalvsh",
+      "language": "fa",
+      "priority": "secondary",
+      "notes": "test",
+      "reviewed": false
     }
   ]
 }
