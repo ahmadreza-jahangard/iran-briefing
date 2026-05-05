@@ -12,7 +12,7 @@ on:
   # case the Cloudflare Worker dies; primary cadence is the Worker firing
   # workflow_dispatch every minute.
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: '*/15 * * * *'
   workflow_dispatch:
 
 # Serialize runs. The Worker fires every minute; if a previous scrape is
@@ -29,7 +29,6 @@ permissions:
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
 
     steps:
       - name: Checkout
